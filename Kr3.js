@@ -22,8 +22,6 @@ class Phone {
         this.free = []
     }
     
-
-
 installApplcation(apps, free) {
     this.memory -= free
     this.list.push (apps)
@@ -31,20 +29,14 @@ installApplcation(apps, free) {
 
 }
 
-
 deleteApplication() {
     let i = this.list.indexOf(apps)
     this.list.splice(i, 1)
     this.memory += this.free[i]
     this.free.splice(i, 1)
-
 }
 }
 
-alert()
-alert()
-alert()
-alert()
 
 
 
