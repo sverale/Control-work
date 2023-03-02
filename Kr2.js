@@ -8,60 +8,29 @@
 alert("Задание №2")
 
 class Person  {
-        name = "name"
-        age = "age"
-        height = "height"
-        weight = "weight"
-        national = "national"
-        sex = "sex"
+    constructor(name, age, height, weight, national, sex){
+        this.name = name
+        this.age = age
+        this.height = height
+        this.weight = weight
+        this.national = national
+        this.sex = sex
+    }
+    speak(name, phrase) {
+        alert(phrase + " " + name.name)
+    }
+
+    heightManager(number) {
+        this.height += number
+    }
 }
-    
-//////////////////////////////////
 
-function Speak(name, phrase) {
-    // добавьте type и phrase в this
-    this.name = name;
-    this.phrase = phrase;
-  }
-  
-  const kris = new Speak('kris', 'hello');
-  const bob = new Speak('bob', 'bay');
+let people = new Person("Kris", 18, 160, 50, "rus", false)
 
-
-//   const kris = new Person('Kris', 18, 160, 50, 'rus', 'false')
-//     const bob = new Person('Bob', 22, 180, 80, 'franc', 'true')
-  
-  bob.say(); // fox says woopwoopwoop
-  kris.say(); // T-rex says ЯAWR
-  
-  // метод можно добавить в прототип
-  Speak.prototype.say = function () {
-    console.log( `name.name` + `phrase`);
-  }; 
-
-//////////////////////////////////////
+console.log(user)
 
 
 
-
-
-// const kris = {
-//         name: 'Kris',
-//         age : '18',
-//         height : '160',
-//         weight: '50',
-//         national : 'rus',
-//         sex : 'false',
-// }
-
-// const bob = {
-//     name: 'Bob',
-//     age : '22',
-//     height : '170',
-//     weight: '80',
-//     national : 'franc',
-//     sex : 'true',
-// }
 
 
 
