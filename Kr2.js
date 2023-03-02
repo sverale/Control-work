@@ -23,11 +23,15 @@ class Person  {
     heightManager(number) {
         this.height += number
     }
+
+    weightManager(number) {
+        this.weight += number
+    }
 }
 
 let people = new Person("Kris", 18, 160, 50, "rus", false)
 
-console.log(user)
+console.log(people)
 
 
 
