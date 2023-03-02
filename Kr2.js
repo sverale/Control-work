@@ -36,7 +36,7 @@ function Speak(name, phrase) {
   
   // метод можно добавить в прототип
   Speak.prototype.say = function () {
-    console.log( name.name + phrase);
+    console.log( `name.name` + `phrase`);
   }; 
 
 //////////////////////////////////////
