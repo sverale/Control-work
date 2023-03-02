@@ -22,7 +22,7 @@ class Phone {
         this.free = []
     }
     
-}
+
 
 installApplcation(apps, free) {
     this.memory -= free
@@ -39,7 +39,7 @@ deleteApplication() {
     this.free.splice(i, 1)
 
 }
-
+}
 
 alert()
 alert()
