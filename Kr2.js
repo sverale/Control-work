@@ -30,6 +30,7 @@ class Person  {
 }
 
 let people = new Person("Kris", 18, 160, 50, "rus", false)
+let people2 = new Person("Bob", 2, 180, 80, "rus", true)
 
 console.log(people)
 
